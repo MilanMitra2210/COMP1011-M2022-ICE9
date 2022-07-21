@@ -1,0 +1,22 @@
+.labels
+{
+    -fx-font-size: 40px;
+    -fx-font-family: "Arial Black";
+}
+
+.table-column
+{
+    -fx-alignment: CENTER;
+}
+
+.grid-pane-border
+{
+    -fx-border-style: none none solid none;
+    -fx-border-color: black;
+}
+
+.hbox-top-border
+{
+    -fx-border-style: solid none none none;
+    -fx-border-color: black;
+}
