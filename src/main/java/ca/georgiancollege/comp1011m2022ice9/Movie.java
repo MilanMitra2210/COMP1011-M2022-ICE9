@@ -26,7 +26,7 @@ public class Movie
     @SerializedName("Director")
     private String m_director;
 
-    @SerializedName("Writers")
+    @SerializedName("Writer")
     private String m_writers;
 
     @SerializedName("Actors")
