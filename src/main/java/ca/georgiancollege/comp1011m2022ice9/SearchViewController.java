@@ -47,18 +47,14 @@ public class SearchViewController implements Initializable
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle)
     {
-        var posterNotFoundImage = new Image("https://trailerfailure.com/img/images/missingConverPhoto.jpg");
+        var posterNotFoundImage = new Image(getClass().getResourceAsStream("poster-not-found.png"));
 
         resultsListView.getSelectionModel().selectedItemProperty().addListener((obs, oldMovieSelected, newMovieSelected) ->{
             System.out.println(newMovieSelected);
             try
             {
-
-                    imageView.setImage(new Image(newMovieSelected.getPoster()));
-
-
-
-            }catch(IllegalArgumentException e)
+                imageView.setImage(new Image(newMovieSelected.getPoster()));
+            }catch(Exception e)
             {
                 imageView.setImage(posterNotFoundImage);
             }
