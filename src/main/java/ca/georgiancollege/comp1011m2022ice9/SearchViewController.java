@@ -44,6 +44,13 @@ public class SearchViewController implements Initializable
         }
     }
 
+    @FXML
+    void searchTextFieldSubmitted(ActionEvent event)
+    {
+        searchButtonClicked(event);
+        resultsListView.requestFocus();
+    }
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle)
     {
