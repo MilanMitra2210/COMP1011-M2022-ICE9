@@ -12,7 +12,7 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException
     {
-        var movie = APIManager.Instance().getMovieFromOMDBByTitleAndYear("Dune", "");
+        var movie = APIManager.Instance().getMovieFromOMDBByTitleAndYear("Star Wars", "1977");
 
         System.out.println(movie);
 

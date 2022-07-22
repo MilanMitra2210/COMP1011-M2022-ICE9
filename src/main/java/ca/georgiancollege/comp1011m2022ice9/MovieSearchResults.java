@@ -28,7 +28,7 @@ public class MovieSearchResults
         String movieList = "";
         for (var movie: getMovies())
         {
-            movieList += "Title: " + movie.getTitle() + ", IMDB ID: " + movie.getIMDB_ID() + "\n";
+            movieList += "Title: " + movie.getTitle() + ", Year: " + movie.getYear() + ", IMDB ID: " + movie.getIMDB_ID() + "\n";
         }
 
         return movieList;
